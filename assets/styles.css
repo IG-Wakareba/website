@@ -111,7 +111,7 @@ a:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 54%;
+  object-position: 81% 18%;
 }
 
 .hero-copy {
@@ -176,42 +176,60 @@ h3 {
   color: #d9efef;
 }
 
-.content-section,
-.feature-grid,
+.photo-stories,
 .contact-section,
 .page-content {
   width: min(68rem, calc(100% - 3rem));
   margin: 0 auto;
 }
 
-.content-section {
-  padding: 5rem 0 3rem;
+.photo-stories {
+  padding: 2rem 0 5rem;
 }
 
-.content-section > p:not(.eyebrow) {
-  max-width: 58rem;
-}
-
-.feature-grid {
+.photo-story {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  padding-bottom: 5rem;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.feature {
-  padding: 1.5rem;
-  border-top: 3px solid var(--river);
-  background: var(--surface);
+.photo-story:nth-child(even) {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
 }
 
-.feature h2 {
-  font-size: 1.35rem;
+.photo-story:nth-child(even) .photo-story-copy {
+  grid-column: 2;
+  grid-row: 1;
 }
 
-.feature p {
+.photo-story:nth-child(even) .photo-story-image {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.photo-story-copy > p:last-child {
   margin-bottom: 0;
+}
+
+.photo-story-image {
+  min-width: 0;
+  margin: 0;
+}
+
+.photo-story-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.2rem;
+}
+
+.photo-story-image figcaption {
+  margin-top: 0.6rem;
   color: var(--muted);
+  font-size: 0.88rem;
 }
 
 .contact-section {
@@ -265,16 +283,192 @@ h3 {
   padding-bottom: 4rem;
 }
 
-.project,
+.project {
+  display: flow-root;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.project h2 {
+  margin-bottom: 1.25rem;
+}
+
+.project-copy {
+  min-width: 0;
+}
+
+.project-image {
+  float: right;
+  width: 40%;
+  min-width: 0;
+  max-width: 24rem;
+  margin: 0 0 1.5rem 2rem;
+}
+
+.project-image-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.project-image-trigger:focus-visible,
+.project-lightbox-close:focus-visible {
+  outline: 3px solid #d78333;
+  outline-offset: 3px;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 34rem;
+  object-fit: contain;
+  object-position: top;
+  border-radius: 0.2rem;
+}
+
+.project--large-image {
+  --project-image-width: 52%;
+}
+
+.project--large-image .project-image {
+  width: var(--project-image-width);
+  max-width: none;
+}
+
+.project-lightbox {
+  position: fixed;
+  inset: 0;
+  width: fit-content;
+  height: fit-content;
+  max-width: 96vw;
+  max-height: 96vh;
+  margin: auto;
+  padding: 3.5rem 0 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+.project-lightbox:popover-open {
+  display: grid;
+  place-items: center;
+}
+
+.project-lightbox::backdrop {
+  background: rgb(8 20 24 / 88%);
+}
+
+.project-lightbox > img {
+  display: block;
+  width: auto;
+  max-width: 96vw;
+  max-height: calc(96vh - 3.5rem);
+  object-fit: contain;
+  border-radius: 0.2rem;
+}
+
+.project-lightbox-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--surface);
+  border-radius: 0.2rem;
+  color: var(--surface);
+  background: var(--river-dark);
+  font: inherit;
+  cursor: pointer;
+}
+
+.project-copy p:last-child,
+.report p:last-child,
+.prose-section p:last-child {
+  margin-bottom: 0;
+}
+
 .report,
 .prose-section {
   padding: 2rem 0;
   border-bottom: 1px solid var(--line);
 }
 
-.project p:last-child,
-.report p:last-child,
-.prose-section p:last-child {
+.report-embed {
+  aspect-ratio: 16 / 9;
+  margin-bottom: 1rem;
+}
+
+.report-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.about-affiliation {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 32rem;
+  margin-top: 2rem;
+}
+
+.about-affiliation > img {
+  flex: 0 0 6rem;
+  display: block;
+  width: 6rem;
+  height: auto;
+}
+
+.about-affiliation p {
+  margin-bottom: 0;
+}
+
+.supporters-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.supporter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.supporter {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.supporter-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  margin: 0 0 1rem;
+}
+
+.supporter-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.supporter h3 {
+  overflow-wrap: anywhere;
+}
+
+.supporter h3 a {
+  text-decoration: none;
+}
+
+.supporter p:last-child {
   margin-bottom: 0;
 }
 
@@ -326,6 +520,10 @@ h3 {
     min-height: 34rem;
   }
 
+  .hero-image {
+    object-position: 82% center;
+  }
+
   .hero::after {
     background: linear-gradient(0deg, rgb(8 30 36 / 88%), rgb(8 30 36 / 12%));
   }
@@ -334,20 +532,39 @@ h3 {
     padding: 3rem 1.25rem;
   }
 
-  .content-section,
-  .feature-grid,
+  .photo-stories,
   .contact-section,
   .page-content {
     width: calc(100% - 2.5rem);
   }
 
-  .content-section {
-    padding: 3.5rem 0 2rem;
+  .photo-stories {
+    padding: 1rem 0 3.5rem;
   }
 
-  .feature-grid {
-    grid-template-columns: 1fr;
-    padding-bottom: 3.5rem;
+  .photo-story,
+  .photo-story:nth-child(even) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+    padding: 2rem 0;
+  }
+
+  .photo-story:nth-child(even) .photo-story-copy,
+  .photo-story:nth-child(even) .photo-story-image {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .project-image,
+  .project--large-image .project-image {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.25rem;
+  }
+
+  .project-image img {
+    max-height: none;
   }
 
   .contact-section {
@@ -373,5 +590,24 @@ h3 {
 
   .page-heading {
     padding: 3rem 0 1.5rem;
+  }
+
+  .supporter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .supporter {
+    padding: 0.85rem;
+  }
+
+  .supporter-logo {
+    height: 6rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .supporter-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

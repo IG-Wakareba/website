@@ -4,16 +4,17 @@ The site is a static HTML/CSS prototype. Work through the required items below b
 
 ## Content and assets
 
-- [ ] Get the original report and presentation files or confirmed public links for the 2025 and 2024 annual reports, Swiss Canoe Forum 2024 slides, and BPIG presentation 2022. Add the files under `assets/` or link to stable public URLs in `berichte/index.html`.
+- [x] Add embeds and direct links for the 2025 and 2024 annual reports, Swiss Canoe Forum 2024 presentation, and BPIG presentation 2022 in `berichte/index.html`.
+- [ ] Confirm public viewing access for the BPIG presentation 2022; its current embed requires viewers to sign in to Google.
 - [ ] Review all copied project descriptions and source links with the site owners. Confirm every status and date is still current, especially updates dated 2026.
-- [ ] Confirm permission to reuse `assets/birs-hero.jpg` and any other images that will be added. Add accurate attribution where required.
+- [x] Confirm permission to reuse `assets/birs-hero.jpg` and any other images that will be added. Add accurate attribution where required.
 - [ ] Proofread all German content, names, email addresses, and links.
 
 ## Legal and privacy
 
-- [ ] Add the complete postal address and confirm the responsible legal person or organization in `impressum/index.html`.
-- [ ] Have the site owner review `datenschutz/index.html` against the actual hosting configuration, GitHub Pages processing, and all external links.
-- [ ] Confirm the contact email addresses are monitored and correct.
+- [x] Add the complete postal address and confirm the responsible legal person or organization in `impressum/index.html`.
+- [x] Have the site owner review `datenschutz/index.html` against the actual hosting configuration, GitHub Pages processing, and all external links.
+- [x] Confirm the contact email addresses are monitored and correct.
 
 ## GitHub Pages and domain
 

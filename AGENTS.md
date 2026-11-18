@@ -20,6 +20,8 @@ This repository is the plain HTML source for the IG WaKaReBa website. The intend
 - `ueber-uns/index.html`: founding story and organizational role.
 - `impressum/index.html` and `datenschutz/index.html`: legal information that must be checked before launch.
 - `assets/styles.css`: site-wide visual styles.
-- `assets/birs-hero.jpg`: homepage photograph.
+- `assets/birs-hero.jpg`: homepage hero photograph.
+- `assets/birs-st-jakob.jpg`, `assets/birs-forellenweg.jpg`, `assets/simmental.jpg`, and `assets/birs-redingbruecke.jpg`: captioned homepage photos.
+- `assets/kraftwerk-birsfelden-kursverbot.jpg`, `assets/wiese-unterlauf.jpg`, `assets/fischereigesetz-bl.jpg`, `assets/surfwellen-reding-joggeli.jpg`, `assets/fischpass-birsfelden.jpg`, `assets/schaenzli.jpg`, `assets/betretungsverbot-birsfelden.jpg`, `assets/moossee-grellingen.jpg`, `assets/wiese-vital.jpg`, `assets/solitude-promenade.jpg`, and `assets/reinacher-heide.jpg`: photos for matching project entries.
 
 When asked to make a change, update only the relevant page and shared styles if needed. Check internal links, image paths, and HTML validity for every edited page. Do not mark the site launch-ready while the report links and legal details noted in `README.md` remain unresolved.
