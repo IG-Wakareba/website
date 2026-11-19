@@ -1,6 +1,6 @@
-# IG WaKaReBa website
+# IG Wakareba website
 
-This is a small, static HTML website for the IG WaKaReBa, a working group of the Basler Paddelsport IG. It is intentionally built without a framework, generator, JavaScript, npm, or a CMS. The HTML files are the source and the finished website.
+This is a small, static HTML website for the IG Wakareba, a working group of the Basler Paddelsport IG. It is intentionally built without a framework, generator, JavaScript, npm, or a CMS. The HTML files are the source and the finished website.
 
 ## Edit and publish
 

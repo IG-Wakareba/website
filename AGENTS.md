@@ -1,6 +1,6 @@
 # Editing guidance for coding agents
 
-This repository is the plain HTML source for the IG WaKaReBa website. The intended workflow is: edit source files, inspect the pages in a browser, then commit to GitHub Pages.
+This repository is the plain HTML source for the IG Wakareba website. The intended workflow is: edit source files, inspect the pages in a browser, then commit to GitHub Pages.
 
 ## Constraints
 

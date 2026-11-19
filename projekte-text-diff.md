@@ -95,7 +95,7 @@ Der restliche Absatz zu Fahrbarkeit und öffentlicher Auflage ist unverändert.
 + Wir sehen das Projekt als Gelegenheit, die Möglichkeiten zum Umtragen von Booten für Paddler zu verbessern. Dazu haben wir beim Bundesamt für Energie eine Eingabe gemacht (19. Oktober 2023).
 ```
 
-**Dritter Absatz:** Die Zwischenverfügung wurde im Original als separater Link mit Datum `6.6.2025` aufgeführt; aktuell ist der Link in den Absatz integriert. `IG Wakareba` wurde zu `IG WaKaReBa` formatiert. Die Einladung in die Begleitkommission wird kürzer beschrieben; der Zusatz `Einsitz zu nehmen` entfiel.
+**Dritter Absatz:** Die Zwischenverfügung wurde im Original als separater Link mit Datum `6.6.2025` aufgeführt; aktuell ist der Link in den Absatz integriert. `IG Wakareba` wurde zu `IG Wakareba` formatiert. Die Einladung in die Begleitkommission wird kürzer beschrieben; der Zusatz `Einsitz zu nehmen` entfiel.
 
 Der Bericht über die erste Sitzung im Mai 2026 war ein eigener Absatz und ist aktuell an diesen Absatz angefügt. Sein Wortlaut ist inhaltlich unverändert.
 
@@ -199,7 +199,7 @@ Der Satz zum Treffen im Januar 2024 ist inhaltlich gleich, wurde an den Absatz a
 
 ```diff
 - Wir von der IG Wakareba und Vertreter von Rennpaddler waren im Januar 2025 an der Vernissage der Projekte. Wir haben unsere Anliegen bei den Behördenvertretern deponiert und werden die Projektentwicklung weiter verfolgen.
-+ Vertreter*innen der IG WaKaReBa und Rennpaddler nahmen im Januar 2025 an der Vernissage teil, brachten ihre Anliegen bei den Behördenvertretern ein und verfolgen die Projektentwicklung weiter.
++ Vertreter*innen der IG Wakareba und Rennpaddler nahmen im Januar 2025 an der Vernissage teil, brachten ihre Anliegen bei den Behördenvertretern ein und verfolgen die Projektentwicklung weiter.
 ```
 
 Der Bildnachweis `Visualisierung © Franz Reschke Landschaftsarchitektur (Wolfram Gothe, Paul Trakies)` wird aktuell nicht angezeigt.
