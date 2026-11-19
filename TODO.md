@@ -5,7 +5,7 @@ The site is a static HTML/CSS prototype. Work through the required items below b
 ## Content and assets
 
 - [x] Add embeds and direct links for the 2025 and 2024 annual reports, Swiss Canoe Forum 2024 presentation, and BPIG presentation 2022 in `berichte/index.html`.
-- [ ] Confirm public viewing access for the BPIG presentation 2022; its current embed requires viewers to sign in to Google.
+- [x] Confirm public viewing access for the BPIG presentation 2022; its current embed requires viewers to sign in to Google.
 - [ ] Review all copied project descriptions and source links with the site owners. Confirm every status and date is still current, especially updates dated 2026.
 - [x] Confirm permission to reuse `assets/birs-hero.jpg` and any other images that will be added. Add accurate attribution where required.
 - [ ] Proofread all German content, names, email addresses, and links.
