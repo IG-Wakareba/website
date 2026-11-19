@@ -18,9 +18,9 @@ The site is a static HTML/CSS prototype. Work through the required items below b
 
 ## GitHub Pages and domain
 
-- [ ] Create or select the GitHub repository and add this site to it.
+- [x] Create or select the GitHub repository and add this site to it.
 - [ ] Decide whether the site will use a `github.io` address or a custom domain, and confirm who controls the domain and DNS.
-- [ ] Enable GitHub Pages for the chosen publishing branch and repository root. Do not add a build system; the committed HTML and CSS are the finished site.
+- [x] Enable GitHub Pages for the chosen publishing branch and repository root. Do not add a build system; the committed HTML and CSS are the finished site.
 - [ ] If using a custom domain, configure its DNS and GitHub Pages custom-domain setting, then verify HTTPS works.
 - [ ] Decide how visitors will move from the Jimdo address to the new site. Configure a redirect if the current domain/provider supports it; otherwise update links and public references.
 
