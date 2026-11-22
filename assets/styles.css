@@ -163,6 +163,29 @@ h3 {
   font-size: clamp(1.1rem, 2vw, 1.3rem);
 }
 
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.hero-actions .hero-button {
+  border-color: var(--surface);
+  color: var(--river-dark);
+  background: var(--surface);
+}
+
+.hero-actions .hero-button:hover {
+  color: var(--river-dark);
+  background: #d9efef;
+}
+
+.hero-actions .hero-contact {
+  color: #fff;
+}
+
 .eyebrow {
   margin-bottom: 0.6rem;
   color: var(--river);
@@ -582,6 +605,12 @@ h3 {
 
   .hero-copy {
     padding: 3rem 1.25rem;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.9rem;
   }
 
   .photo-stories,
