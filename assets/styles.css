@@ -283,14 +283,57 @@ h3 {
   padding-bottom: 4rem;
 }
 
+.project-toc {
+  margin: 1.5rem 0 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--river);
+  background: #e4ece8;
+}
+
+.project-toc-intro {
+  max-width: 52rem;
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.project-toc ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.25rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-toc a {
+  display: block;
+  line-height: 1.4;
+}
+
 .project {
   display: flow-root;
   padding: 2rem 0;
   border-bottom: 1px solid var(--line);
 }
 
+.project h2[id] {
+  scroll-margin-top: 1rem;
+}
+
 .project h2 {
   margin-bottom: 1.25rem;
+}
+
+.project-backlink {
+  display: inline-block;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.project-backlink:hover {
+  color: var(--river);
 }
 
 .project-copy {
@@ -347,7 +390,6 @@ h3 {
   max-width: 96vw;
   max-height: 96vh;
   margin: auto;
-  padding: 3.5rem 0 0;
   border: 0;
   background: transparent;
   overflow: visible;
@@ -366,21 +408,27 @@ h3 {
   display: block;
   width: auto;
   max-width: 96vw;
-  max-height: calc(96vh - 3.5rem);
+  max-height: 96vh;
   object-fit: contain;
   border-radius: 0.2rem;
 }
 
 .project-lightbox-close {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0.65rem 1rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  padding: 0;
   border: 1px solid var(--surface);
-  border-radius: 0.2rem;
+  border-radius: 50%;
   color: var(--surface);
-  background: var(--river-dark);
+  background: rgb(16 58 69 / 90%);
   font: inherit;
+  font-size: 1.8rem;
+  line-height: 1;
   cursor: pointer;
 }
 
@@ -473,6 +521,10 @@ h3 {
 }
 
 .status-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   margin-top: 1rem;
   color: var(--muted);
   font-size: 0.9rem;
@@ -565,6 +617,14 @@ h3 {
 
   .project-image img {
     max-height: none;
+  }
+
+  .project-toc {
+    padding: 1rem;
+  }
+
+  .project-toc ul {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .contact-section {
